@@ -36,7 +36,7 @@ To view the website, go to: [http://localhost:1337](http://localhost:1337)
 
 ### Version info
 
-This app was originally generated on Sun Jan 10 2021 18:18:35 GMT-0500 (Eastern Standard Time) using Sails v1.4.0.
+This app was generated using Sails v1.4.0 on Jan 10, 2021.
 
 <!-- Internally, Sails used [`sails-generate@2.0.1`](https://github.com/balderdashy/sails-generate/tree/v2.0.1/lib/core-generators/new). -->
 
