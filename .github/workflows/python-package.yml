@@ -21,6 +21,12 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: ${{ matrix.python-version }}
+    - name: npm install
+      run: |
+        npm install
+    - name: start the server
+      run: |
+        node app.js &
     - name: Install SeleniumBase and dependencies
       run: |
         pip install seleniumbase
@@ -45,3 +51,7 @@ jobs:
       run: |
         echo "def test_1(): pass" > nothing.py
         pytest nothing.py
+    - name: Run the UI tests
+      run: |
+        cd ui_tests/
+        pytest --rs --crumbs -v
