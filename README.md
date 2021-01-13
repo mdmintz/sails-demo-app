@@ -43,10 +43,11 @@ py -m venv sbase_env
 call sbase_env\\Scripts\\activate
 ```
 
-#### 🔵 Install SeleniumBase
+#### 🔵 Install SeleniumBase + Chromedriver
 
 ```bash
 pip install seleniumbase --upgrade
+seleniumbase install chromedriver
 ```
 
 #### 🔵 Run the tests
