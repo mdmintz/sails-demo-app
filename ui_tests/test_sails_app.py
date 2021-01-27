@@ -81,7 +81,7 @@ class TestSailsApp(BaseCase):
 
         # Verify new user infomation
         self.click("#header-account-menu-link")
-        self.click('a:contains("Settings")')
+        self.js_click('a:contains("Settings")')
         self.assert_text(name, "#account-overview div.container")
         self.assert_text(email, "#account-overview div.container")
 
@@ -99,7 +99,7 @@ class TestSailsApp(BaseCase):
 
         # Re-verify new user infomation
         self.click("#header-account-menu-link")
-        self.click('a:contains("Settings")')
+        self.js_click('a:contains("Settings")')
         self.assert_text(name, "#account-overview div.container")
         self.assert_text(email, "#account-overview div.container")
 
