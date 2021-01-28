@@ -1,4 +1,4 @@
-## A [Sails.js](https://sailsjs.com) web app with UI tests. ✅
+## ⛵ A [Sails.js](https://sailsjs.com) web app with UI tests. ✅
 
 <div><a href="https://github.com/mdmintz/sails-demo-app/actions">
 <img src="https://github.com/mdmintz/sails-demo-app/workflows/CI%20build/badge.svg" alt="SeleniumBase GitHub Actions" /></a> <a href="https://github.com/seleniumbase/SeleniumBase"><img src="https://img.shields.io/badge/tested%20with-SeleniumBase-04C38E.svg" alt="Tested with SeleniumBase" /></a></div>
@@ -12,19 +12,19 @@ npm install sails -g
 sails new sails_demo_app --fast
 ```
 
-#### 🔵 To complete the setup, run:
+#### ⛵ To complete the setup, run:
 
 ```bash
 npm install
 ```
 
-#### 🔵 To start the server, run:
+#### ⛵ To start the server, run:
 
 ```bash
 node app.js
 ```
 
-#### 🔵 To view the website, go to: [http://localhost:1337](http://localhost:1337)
+#### ⛵ To view the website, go to: [http://localhost:1337](http://localhost:1337)
 
 (The app will stay up while the server is running.)
 
