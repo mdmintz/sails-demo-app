@@ -24,6 +24,8 @@ npm install
 
 ```bash
 node app.js
+# - OR - #
+sails lift
 ```
 
 #### ⛵ To view the website, go to: [http://localhost:1337](http://localhost:1337)
