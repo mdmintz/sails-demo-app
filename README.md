@@ -1,4 +1,4 @@
-<h2> ⛵ A [Sails.js](https://sailsjs.com) web app with UI tests. ✅</h2>
+## ⛵ A [Sails.js](https://sailsjs.com) web app with UI tests. ✅
 
 <div><a href="https://github.com/mdmintz/sails-demo-app/actions">
 <img src="https://github.com/mdmintz/sails-demo-app/workflows/CI%20build/badge.svg" alt="SeleniumBase GitHub Actions" /></a> <a href="https://github.com/seleniumbase/SeleniumBase"><img src="https://img.shields.io/badge/tested%20with-SeleniumBase-04C38E.svg" alt="Tested with SeleniumBase" /></a></div>
