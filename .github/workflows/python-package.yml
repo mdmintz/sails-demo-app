@@ -4,8 +4,6 @@ on:
     branches: [ master ]
   pull_request:
     branches:
-  schedule:
-    - cron: 1 * * * *  # Run on the first minute of each hour
 
 jobs:
   build:
