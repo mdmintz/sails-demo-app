@@ -56,8 +56,8 @@ jobs:
     - name: Run the UI tests in Chrome
       run: |
         cd ui_tests/
-        pytest --rs --crumbs -v --browser=chrome --headless
+        pytest --rs --crumbs -v --browser=chrome --xvfb
     - name: Run the UI tests in Firefox
       run: |
         cd ui_tests/
-        pytest --rs --crumbs -v --browser=firefox --headless
+        pytest --rs --crumbs -v --browser=firefox --xvfb
