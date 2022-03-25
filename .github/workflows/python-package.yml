@@ -1,14 +1,10 @@
 name: CI build
 on:
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Environment to run tests against'
-        type: environment
-        required: true
+  pull_request:
+    branches:
   push:
     branches: [ master ]
-  pull_request:
+  workflow_dispatch:
     branches:
 
 jobs:
