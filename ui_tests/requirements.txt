@@ -1,2 +1,4 @@
-seleniumbase>=2.4.33
-sbvirtualdisplay>=1.1.0
+seleniumbase>=4.9.6
+sbvirtualdisplay>=1.1.1
+pdbp>=1.2.4
+tabcompleter>=1.0.0
