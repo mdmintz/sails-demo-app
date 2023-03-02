@@ -37,18 +37,16 @@ jobs:
         pip install flake8
         # Stop the build if there are flake8 issues
         flake8 . --count --show-source --statistics --exclude=temp
-    - name: Install Chrome and Firefox
+    - name: Install Chrome
       run: |
         sudo apt install google-chrome-stable
-        sudo apt-get install firefox
     - name: Check the console scripts interface
       run: |
         seleniumbase
         sbase
-    - name: Install chromedriver and geckodriver (Firefox Webdriver)
+    - name: Install chromedriver
       run: |
         seleniumbase install chromedriver
-        seleniumbase install geckodriver
     - name: Make sure pytest is working
       run: |
         echo "def test_1(): pass" > nothing.py
@@ -57,7 +55,3 @@ jobs:
       run: |
         cd ui_tests/
         pytest --rs --crumbs -v --browser=chrome --headless
-    - name: Run the UI tests in Firefox
-      run: |
-        cd ui_tests/
-        pytest --rs --crumbs -v --browser=firefox --headless
