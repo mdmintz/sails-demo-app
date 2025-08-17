@@ -40,6 +40,7 @@ jobs:
     - name: Lint with flake8
       run: |
         pip install flake8
+        cd ui_tests/
         # Stop the build if there are flake8 issues
         flake8 . --count --show-source --statistics --exclude=temp
     - name: Install Chrome
@@ -58,5 +59,4 @@ jobs:
         pytest nothing.py
     - name: Run the UI tests in Chrome
       run: |
-        cd ui_tests/
         pytest --rs --crumbs -v --browser=chrome --xvfb
