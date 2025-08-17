@@ -75,7 +75,9 @@ class TestSailsApp(BaseCase):
         self.type("#email-address", email)
         self.type("#password", password)
         self.type("#confirm-password", password)
+        self.sleep(0.2)
         self.click("#terms-agreement")
+        self.sleep(0.2)
         self.click('button[type="submit"]')
         self.assert_text("Welcome!", "h1")
 
