@@ -30,6 +30,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: npm install
       run: |
+        npm config set fetch-retries 3
+        npm config set fetch-timeout 10000
         npm install
     - name: start the server
       run: |
@@ -59,4 +61,4 @@ jobs:
         pytest nothing.py
     - name: Run the UI tests in Chrome
       run: |
-        pytest --rs --crumbs -v --browser=chrome --xvfb
+        pytest --rs --crumbs -v --browser=chrome --xvfb --reruns=1
