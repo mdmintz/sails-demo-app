@@ -25,8 +25,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: npm install
       run: |
-        npm config set fetch-retries 3
-        npm config set fetch-timeout 10000
+        npm config set fetch-retries 5
+        npm config set fetch-timeout 15000
         npm install
     - name: start the server
       run: |
