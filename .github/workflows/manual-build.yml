@@ -26,7 +26,7 @@ jobs:
     - name: npm install
       run: |
         npm config set fetch-retries 5
-        npm config set fetch-timeout 15000
+        npm config set fetch-timeout 20000
         npm install
     - name: start the server
       run: |
